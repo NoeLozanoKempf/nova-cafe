@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-size: 24px;
+  line-height: 43.2px;
+}
+
 .titulo-principal {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
@@ -24,6 +29,14 @@ html {
   color: #fff;
 }
 
+.text-black {
+  color: #000;
+}
+
+.text-weight-700 {
+  font-weight: 700;
+}
+
 .titulo-banner {
   font-family: 'Oswald', sans-serif;
   font-size: 68px;
@@ -35,9 +48,31 @@ html {
   font-weight: 300;
 }
 
-p {
-  font-size: 24px;
-  line-height: 43.2px;
+.contenedor-banner {
+  background: url('../img/background-banner.jpg') no-repeat center;
+  background-size: cover;
+  height: 740px;
+}
+
+.banner {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 158px;
+  h3 {
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 68px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 .boton-outlined {
@@ -47,15 +82,26 @@ p {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-  margin-top: 24px;
+  transition: all 0.6s;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 }
 
-.text-black {
+.boton-solido {
+  background: #fff;
   color: #000;
-}
-
-.text-weight-700 {
-  font-weight: 700;
+  padding: 14px 50px;
+  border: 1px solid transparent;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: all 0.6s;
+  &:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
 }
 
 .contenedor {
@@ -93,7 +139,7 @@ p {
   }
 }
 
-.logo-nova {
+.logo-nova a {
   font-size: 20px;
   color: #fff;
   font-weight: 700;
@@ -102,36 +148,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-decoration: none;
   span {
     font-weight: 300;
-  }
-}
-
-.contenedor-banner {
-  background: url('../img/background-banner.jpg') no-repeat center;
-  background-size: cover;
-  height: 740px;
-}
-
-.banner {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 24px;
-  padding-top: 158px;
-  h3 {
-    font-size: 48px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 68px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
   }
 }
 
@@ -171,7 +190,8 @@ p {
 
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(630px, 1fr));
+
   div {
     background: #000;
     color: #fff;
