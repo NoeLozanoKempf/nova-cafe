@@ -109,7 +109,7 @@ p {
 }
 
 .contenedor-banner {
-  background: url('/img/background-banner.jpg') no-repeat center;
+  background: url('./img/background-banner.jpg') no-repeat center;
   background-size: cover;
   height: 740px;
 }
@@ -136,7 +136,7 @@ p {
 }
 
 .contenedor-sobre-nosotros {
-  background: url('/img/background-nosotros.jpg') no-repeat center;
+  background: url('./img/background-nosotros.jpg') no-repeat center;
   background-size: cover;
   background-position-x: 0px;
   display: flex;
@@ -247,7 +247,7 @@ p {
 }
 
 .contenedor-contactanos {
-  background: url('/img/background-contactanos.jpg') no-repeat center;
+  background: url('./img/background-contactanos.jpg') no-repeat center;
   height: 655px;
   padding-top: 64px;
   form {
