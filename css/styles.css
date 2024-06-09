@@ -68,6 +68,8 @@ p {
   height: 70px;
   flex-wrap: wrap;
   align-content: center;
+  position: sticky;
+  top: 0;
   div {
     display: flex;
     align-items: center;
@@ -137,7 +139,6 @@ p {
   background: url('../img/background-nosotros.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  /* background-position-x: 0px; */
   display: flex;
   justify-content: center;
   align-items: center;
