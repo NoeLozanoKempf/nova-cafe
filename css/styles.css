@@ -351,6 +351,7 @@ footer {
 
 .overlay img {
   display: block;
+  width: 900px;
 }
 
 .contenedor-overlay {
